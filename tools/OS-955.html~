@@ -3,11 +3,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Page Title</title>
-		<link rel="stylesheet" href="./windows.css">
+		<title>OS-955</title>
+		<link rel="stylesheet" href="./OS-955.css">
 	</head>
 
 	<body>
+		<div>
+			<img src="./OS-955/loading.avif" alt="">
+		</div>
 		<footer>
 			<button>Start</button>
 		</footer>
