@@ -28,7 +28,7 @@
 			<p>      Not that we know of anyway...</p>
 		</div>
 		<script type="text/javascript">
-			window.onpageshow = function() { fetch( "./404.html" ).then( resp => response.text() ).then( text => document.body.innerHTML = text ); }
+			window.onpageshow = function() { fetch( "./404.html" ).then( response => response.text() ).then( text => document.body.innerHTML = text ); }
 		</script>
 	</body>
 </html>
