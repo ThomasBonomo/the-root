@@ -2,18 +2,34 @@
 
 <html>
 	<head>
-		<title>404 - Cliff discovered.</title>
-		<link rel="stylesheet" href="./404.css" />
+		<title>404 - Out of bounds.</title>
+		<style type="text/css" >
+			@font-face {
+				font-family: "ubuntu";
+				src: url( "./UbuntuMono-Regular.woff2" );
+			}
+
+			* { margin: 0; padding: 0; text-align: center; font-family: "ubuntu"; font-size: 1.2rem; cursor: default; }
+			::selection { background: #00FF00; color: #000000; }
+
+			html { background-color: #000000; padding: 3rem; }
+			body { display: inline-block; }
+			div {}
+			p { white-space: pre; text-align: left; }
+			a { text-decoration: none; }
+			a:hover { text-decoration: underline; }
+		</style>
 	</head>
 
 	<body>
 		<div>
-			<p>404 - You have reached the edge.</p>
-			<p>      There is <a href="./0/nothing.html" >nothing</a> beyond this point.</p>
-			<p>      Not that we know of anyway...</p>
+			<p>404 - You have left the bounds of this website,</p>
+			<p>      fallen off the edge of the internet.</p>
+			<p>      May whatever is down there have mercy on you.</p>
 		</div>
 		<script type="text/javascript">
-			window.onpageshow = function() { fetch( "./404.html" ).then( response => response.text() ).then( text => document.body.innerHTML = text ); }
+			window.onpageshow = function() { fetch( "./404-head.html" ).then( response => response.text() ).then( text => document.body.innerHTML = text );
+			fetch( "./404-body.html" ).then( response => response.text() ).then( text => document.body.innerHTML = text ); }
 		</script>
 	</body>
 </html>
