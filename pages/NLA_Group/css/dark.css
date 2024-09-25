@@ -1,0 +1,23 @@
+:root {
+	--primary-dark: #000;
+	--secondary-dark: #999;
+	--accent-dark: #333;
+}
+
+::-webkit-scrollbar {width:1rem;}
+::-webkit-scrollbar-track {background-color:var(--primary-dark); border:0.05rem solid var(--secondary-dark);}
+::-webkit-scrollbar-thumb {background-color:var(--promary-dark); border:0.05rem solid var(--secondary-dark);}
+::-webkit-scrollbar-thumb:hover {background-color:var(--accent-dark);}
+
+* {font:1.2rem Courier, monospace;}
+body {margin:0; background:var(--primary-dark) url("res/bg-dark.bmp"); animation:background-anim 3s infinite linear;}
+header {background-color:var(--primary-dark); font-size:0; text-align:center;}
+
+.header-accent {height:0.05rem; background-color:var(--secondary-dark);}
+.header-button {background-color:var(--primary-dark); color:var(--secondary-dark); border:none; padding:.3rem;}
+.header-button:hover {background-color:var(--accent-dark);}
+
+@keyframes background-anim {
+	from {background-position:0 0;}
+	to {background-position:64px 64px;}
+}
