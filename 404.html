@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<title>404 - Cliff discovered.</title>
-		<link rel="stylesheet" href="s./css/master.css" />
+		<link rel="stylesheet" href="./404.css" />
 		<style type="text/css" >
 			@font-face {
 				font-family: "ubuntu";
@@ -27,5 +27,8 @@
 			<p>      There is <a href="./0/nothing.html" >nothing</a> beyond this point.</p>
 			<p>      Not that we know of anyway...</p>
 		</div>
+		<script type="text/javascript">
+			window.onpageshow = function() { fetch( "./404.html" ).then( resp => response.text() ).then( text => document.body.innerHTML = text ); }
+		</script>
 	</body>
 </html>
