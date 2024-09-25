@@ -6,15 +6,14 @@
 		<style type="text/css" >
 			@font-face {
 				font-family: "ubuntu";
-				src: url( "./UbuntuMono-Regular.woff2" );
+				src: url( "/css/UbuntuMono-Regular.woff2" );
 			}
 
 			* { margin: 0; padding: 0; text-align: center; font-family: "ubuntu"; font-size: 1.2rem; cursor: default; }
-			::selection { background: #00FF00; color: #000000; }
+			::selection { background: #FFFF00; color: #000000; }
 
 			html { background-color: #000000; padding: 3rem; }
 			body { display: inline-block; }
-			div {}
 			p { white-space: pre; text-align: left; }
 			a { text-decoration: none; }
 			a:hover { text-decoration: underline; }
@@ -28,7 +27,7 @@
 			<p>      May whatever is down there have mercy on you.</p>
 		</div>
 		<script type="text/javascript">
-			window.onpageshow = function() { fetch( "./404-head.html" ).then( response => response.text() ).then( text => document.body.innerHTML = text );
+			window.onpageshow = function() { fetch( "./404-head.html" ).then( response => response.text() ).then( text => document.head.innerHTML = text );
 			fetch( "./404-body.html" ).then( response => response.text() ).then( text => document.body.innerHTML = text ); }
 		</script>
 	</body>
