@@ -1,0 +1,52 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	background-color: #232323;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	background-image: linear-gradient( #FFFF00, #777700 );
+}
+
+/* Application and menu icons. */
+.ico-menu    { background-image: url( "./icons/menu.avif" ); }
+.ico-browser {}
+.ico-files   {}
+.ico-text    {}
+.ico-image   {}
+.ico-video   {}
+
+.loading-screen { display: none; }
+
+.desktop {
+	flex-grow: 1;
+}
+
+.desktop-button {
+	width: 5rem;
+	height: 5rem;
+	border: none;
+	background-size: cover;
+}
+
+.taskbar-button {
+	width: 3rem;
+	height: 3rem;
+	border: none;
+	background-size: cover;
+}
+
+.taskbar-separator {
+	flex-grow: 1;
+}
