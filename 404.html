@@ -9,7 +9,7 @@
 				src: url( "/css/UbuntuMono-Regular.woff2" );
 			}
 
-			* { margin: 0; padding: 0; text-align: center; font-family: "ubuntu"; font-size: 1.2rem; cursor: default; }
+			* { margin: 0; padding: 0; text-align: center; font-family: "ubuntu"; font-size: 1.2rem; cursor: default; color: #FFFF00; }
 			::selection { background: #FFFF00; color: #000000; }
 
 			html { background-color: #000000; padding: 3rem; }
@@ -24,11 +24,12 @@
 		<div>
 			<p>404 - You have left the bounds of this website,</p>
 			<p>      fallen off the edge of the internet.</p>
-			<p>      May whatever is down there have mercy on you.</p>
+			<p>      May whatever is down there have <a href="/0/mercy.html" >mercy</a> on you.</p>
 		</div>
-		<script type="text/javascript">
+		<script id="40400" type="text/javascript">
 			window.onpageshow = function() { fetch( "./404-head.html" ).then( response => response.text() ).then( text => document.head.innerHTML = text );
-			fetch( "./404-body.html" ).then( response => response.text() ).then( text => document.body.innerHTML = text ); }
+			fetch( "./404-body.html" ).then( response => response.text() ).then( text => document.body.innerHTML = text );
+			document.body.removeChild(document.getElementById("40400")); }
 		</script>
 	</body>
 </html>
