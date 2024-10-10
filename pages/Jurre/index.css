@@ -1,0 +1,81 @@
+/* Main background color: #3D3846 */
+/* Second background color: #241F31 */
+/* Main foreground color: #FEFE61 */
+
+/* Fonts */
+
+@font-face {
+	font-family: "comfy";
+	src: url("./resources/Comfortaa-Regular.woff2");
+}
+
+
+/* Global properties. */
+
+* { margin:0; padding:0; }
+html { background-color: #241F31; }
+
+
+/* Layout options. */
+
+.float-right { float: right; }
+
+
+/* UI Elements */
+
+.header {
+	background-image: url("./resources/background.png");
+	padding: 1rem;
+	font-size: 0;
+}
+
+.header-bar {
+	background-color: #3D3846;
+	box-shadow: #000000 0 0 .7rem;
+	font-size: 0;
+}
+
+.header-button {
+	color: #FFFF61;
+	display: inline-block;
+	padding: .4rem;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-family: "comfy";
+	transition-duration: .2s;
+}
+.header-button:hover { background-color: #241F31; }
+
+.page-body {
+	padding: 3rem;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	align-content: flex-start;
+	justify-content: center;
+}
+
+.game-icon {
+	background-color: #3D3846;
+	padding: .4rem;
+	border-radius: .5rem;
+	text-decoration: none;
+	transition-duration: .2s;
+}
+.game-icon:hover { transform: scale(1.1, 1.1); }
+
+.game-title {
+	color: #FEFE61;
+	text-decoration: none;
+	font-family: "comfy";
+}
+
+.footer {
+	background-color: #3D3846;
+	box-shadow: #000000 0 0 .7rem;
+	color: #FEFE61;
+	padding: .2rem;
+	font-family: "comfy";
+	font-size: .7rem;
+}
